@@ -700,6 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   f_offset: 1
+  f_maxoffset: 0
   lookat: {fileID: 1908700868}
 --- !u!114 &2131719790
 MonoBehaviour:
