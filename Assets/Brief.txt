@@ -1,0 +1,57 @@
+Hi Richard
+
+Can you help me out with my off axis projection demo please?
+
+Basically I need you to use this plugin:
+
+https://assetstore.unity.com/packages/tools/camera/camera-off-axis-projection-142595
+
+I want the player to be inside a building with a window out on a
+landscape such as a city.  You can actually be in mid air because you
+never see behind the window.
+
+The window frame matches the rectangle from the off axis projection.  So
+think of it that your monitor/tv actually represents the view out of the
+window.  It changes depending on the angle you are looking at your
+display.  So if you are looking from the right hand side you can see
+more of the left side out of the window.  Just like a real window.
+
+I've attached City.png to illustrate what I mean. (He didn't...)
+
+So the demo comes in 2 parts....
+
+1) A POC just like the attached image.  Hard code the distance to x2 the
+width of the display/window.  So when testing I will only stand that
+distance.  I will send the angles through using a joypad left analog
+stick x axis.  -1 = -90degrees and +1 = +90 degrees, 0 equals centre. 
+You can test by moving a joypad in line with your movement and the
+display should give the correct adjusting view out on the lanscape.
+
+2) Add in the Y Axis too which should be simple.  Add in some super
+simple game, so something flying from side to side that you can shoot. 
+A dragon, a plane...whatever.  As soon as it is shot another one can fly
+in and start flying around randomly.  No need to keep score or anything.
+  You shoot where the mouse cursor is.  I don't know if that is as easy
+as usual or whether you need to do raytracing based on your view. 
+Finally I will dynamically pass you the distance back using the right
+hand analog X axis.  0 -> 1 where 1 represents 10 times the width of the
+display.
+
+For now I'm more interested in deliverable 1 so I can inspire myself to
+hook up the 3d functionality correctly.  I'm hoping you could do
+deliverable 1 maybe in an evening.
+
+Let me know what you think.  It's quite complex to get your head around
+so let me know if none of it makes sense.
+
+I think I've sent them before but here is 2 videos illustrating the
+effect I'm going for:
+
+2 minutes 42 seconds into this:
+https://www.youtube.com/watch?v=Jd3-eiid-Uw
+
+https://medium.com/@michel.brisis/off-axis-projection-in-unity-1572d826541e
+
+Thanks
+
+Andy
