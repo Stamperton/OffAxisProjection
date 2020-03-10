@@ -6,6 +6,7 @@ using Assets.CameraOffAxisProjection.Scripts;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float f_offset;
+    [SerializeField] float z_offset;
     [SerializeField] CameraOffAxisProjection offAxis;
     #region We Might Still Use These
     //[SerializeField] float f_maxoffset;
@@ -20,6 +21,12 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        offAxis.PointOfView = new Vector3(Input.GetAxis("Horizontal") * f_offset, Input.GetAxis("Vertical") * f_offset /* Time.deltaTime*/, 0);
+        offAxis.PointOfView = new Vector3(Input.GetAxis("Horizontal") * f_offset, Input.GetAxis("Vertical") * f_offset /* Time.deltaTime*/, z_offset);
+
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
