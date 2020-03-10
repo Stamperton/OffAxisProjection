@@ -6,9 +6,11 @@ using Assets.CameraOffAxisProjection.Scripts;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float f_offset;
-    [SerializeField] float f_maxoffset;
-    [SerializeField] Transform lookat;
     [SerializeField] CameraOffAxisProjection offAxis;
+    #region We Might Still Use These
+    //[SerializeField] float f_maxoffset;
+    //[SerializeField] Transform lookat;
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
